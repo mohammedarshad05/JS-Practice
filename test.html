@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const myusername = "arsh";
+      const mypassword = "123"
+
+      let username , password;
+      let isloggedin = false;
+
+      do{
+          myusername = prompt("enter your name: ");
+          mypassword = prompt("enter your password: ");
+
+          if( username == myusername && password == mypassword){
+              isloggedin = true;
+              alert("login successful: ")
+          }else{
+                  alert("invalid login")
+          }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>do-while</title>
+  </head>
+  <body>
+    <script>
+      const myname = "arsh";
+      const mypassowrd = "arsh123";
+
+      let username, password;
+      let loggin = false;
+      let attempts = 0;
+      do {
+        username = prompt("enter your name:");
+        password = prompt("enter your password:");
+        if (username == myname && password == mypassowrd) {
+          loggin = true;
+          alert("your login is successful");
+        } else {
+          alert("invalid login, please try again");
+        }
+        attempts++;
+        if (attempts == 3) {
+          alert("too many attempts");
+          break;
+        }
+      } while (!loggin);
+    </script>
+  </body>
+</html>
