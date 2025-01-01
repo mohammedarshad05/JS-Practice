@@ -1,11 +1,15 @@
-function calcfib(val1, val2, val3) {
-  for (let i = 2; i <= 8; i++) {
-    let val3 = val1 + val2;
+function calcfib(n) {
+  let val1 = 1;
+  let val2 = 1;
+  let val3 = 0;
+  console.log(val1);
+  console.log(val2);
+  console.log(val3);
+  for (let i = 2; i <= n; i++) {
+    val3 = val1 + val2;
+    console.log(val3);
     val1 = val2;
     val2 = val3;
-    console.log(i);
   }
-  return val3;
 }
-let ans = calcfib(1, 1, 0);
-console.log(ans);
+calcfib(7);
