@@ -1,11 +1,9 @@
 class rectangle {
   width;
-
   height;
 
   constructor(w, h) {
     this.width = w;
-
     this.height = h;
   }
 
@@ -15,11 +13,9 @@ class rectangle {
 
   printpattern(patternChar) {
     let pattern = "";
-
     for (let i = 1; i <= this.width; i++) {
       pattern = pattern + patternChar;
     }
-
     for (let i = 1; i <= this.height; i++) {
       console.log(pattern);
 
