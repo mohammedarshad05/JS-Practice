@@ -20,7 +20,11 @@ class Rectangle {
 
   const rectangles = [];
   rectangles.push(rectangle1,rectangle2,rectangle3);
-  function printrectangle(rectangle){
+
+  printrectangle(rectangles);
+
+
+  function printrectangle(rectangles){
   for (const rectangle of rectangles) {
     console.log(`\n~~~~~~~✦✦✦PRINTING RECTANGLE INFORMATION✦✦✦~~~~~~~`);
     console.log(`LENGTH : ${rectangle.length}`);
@@ -30,7 +34,6 @@ class Rectangle {
     console.log(`----------------------------------------------\n`);
   }
 }
-printrectangle();
 
 
 
