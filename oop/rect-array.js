@@ -22,7 +22,7 @@ class Rectangle {
   rectangles.push(rectangle1,rectangle2,rectangle3);
   function printrectangle(rectangle){
   for (const rectangle of rectangles) {
-    console.log(`\n~~~~~~~PRINTING RECTANGLE INFORMATION~~~~~~~`);
+    console.log(`\n~~~~~~~✦✦✦PRINTING RECTANGLE INFORMATION✦✦✦~~~~~~~`);
     console.log(`LENGTH : ${rectangle.length}`);
     console.log(`WIDTH : ${rectangle.width}`);
     console.log(`CALCULATED AREA : ${rectangle.calculateArea()}`);
