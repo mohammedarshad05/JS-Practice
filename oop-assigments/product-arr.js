@@ -16,18 +16,16 @@ let product3 = new product("Headphones", 2000, 20);
 let product4 = new product("Keyboard", 1000, 5);
 
 const products = [];
-products.push(product1, product2, product3,product4);
+products.push(product1, product2, product3, product4);
 
 printArray(products);
 
 function printArray(Products) {
-
   for (const item of Products) {
     // console.log(`~~~~~~~✦✦✦PRINTING THE ORIGINAL ARRAY✦✦✦~~~~~~~`);
     console.log(`NAME: ${item.name}`);
     console.log(`PRICE : ${item.price}`);
     console.log(`STOCK : ${item.stock}`);
-    
   }
 }
 
@@ -35,5 +33,11 @@ const filterProduct = products.filter((product) => product.stock > 10);
 console.log(`~~~✦✦PRINTING THE FILTERED ARRAY✦✦~~~`);
 printArray(filterProduct);
 
-let updatedprice= products.map( product=> product.price * 1.15);
-printArray(updatedprice);
+let updatedprice = filterProduct.map((n) => {
+  n.name, 
+  (n.price * 0.15).toFixed(2), 
+  n.stock;
+});
+console.log(updatedprice);
+
+// printArray(updatedprice);

@@ -25,7 +25,5 @@ class rectangle {
 }
 
 let rect = new rectangle(4, 3);
-
 // console.log(rect.calculaterect());
-
 console.log(rect.printpattern("#"));

@@ -26,7 +26,7 @@ const AverageStudents = students.filter(n => n.marks > 60);
 console.log(`~~~✦✦PRINTING THE FILTERED ARRAY✦✦~~~`);
 printArray(AverageStudents);
 
-let AverageMarks = students.reduce((total, student) => total + student.marks);
-const AverageMark = AverageMarks / 100;
+let sum = students.reduce((total, n) => total + n.marks,0);
+const averagemarks = sum / students.length;
 console.log(`~~~✦✦PRINTING THE AVERAGE MARKS✦✦~~~`);
-console.log(AverageMark);
+console.log(averagemarks);
