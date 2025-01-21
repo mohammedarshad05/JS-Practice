@@ -34,9 +34,7 @@ console.log(`~~~✦✦PRINTING THE FILTERED ARRAY✦✦~~~`);
 printArray(filterProduct);
 
 let updatedprice = filterProduct.map((n) => {
-  n.name, 
-  (n.price * 0.15).toFixed(2), 
-  n.stock;
+  n.name, (n.price * 0.15).toFixed(2), n.stock;
 });
 console.log(updatedprice);
 
