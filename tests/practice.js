@@ -1,136 +1,43 @@
-function calfact(n) {
-  let fact = 1;
-  for (i = 2; i <= n; i++) {
-    fact = fact * i;
-  }
-  return fact;
-}
-let ans = calfact(6);
-console.log(ans);
+// let fact = 1;
+// for (let i = 1; i <= 5; i++) {
+//   fact = fact * i;
+//   // console.log(fact);
+// }
+// //`````````````````````````````````````````````
 
-//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// let f = 1;
+// let s = 1;
+// console.log(f);
+// console.log(s);
+// for (let i = 2; i <= 8; i++) {
+//   let sum = f + s;
+//   f = s;
+//   s = sum;
+//   // console.log(sum);
+// }
+// //```````````````````````````````````````````````````````
+// let n = 9;
+// let isprime = true;
+// for (let i = 2; i < n; i++) {
+//   if (n % i == 0) {
+//     isprime = false;
+//     break;
+//   }
+// }
+// if (isprime == true) {
+//   console.log(`${n} is prime no`);
+// } else {
+//   console.log(`${n} is not prime no`);
+// }
+const products = [
+  { name: "Laptop", price: 50000, stock: 15 },
+  { name: "Mobile", price: 15000, stock: 8 },
+  { name: "Headphones", price: 2000, stock: 20 },
+  { name: "Keyboard", price: 1000, stock: 5 },
+];
+const arangeproduct = products.filter((n) => n.stock > 5);
+console.log(arangeproduct);
 
-function oddeven(n) {
-  n % 2 == 0 ? console.log("even") : console.log("odd");
-}
-oddeven(6);
+const mapin = products.map(n => {n.name, (n.price * 0.15), n.stock});
+console.log(mapin);
 
-//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-function fib(n) {
-  let first = 1;
-  let second = 1;
-  let sum = 0;
-  console.log(first);
-  console.log(second);
-
-  for (let i = 0; i <= n; i++) {
-    sum = first + second;
-    console.log(sum);
-
-    first = second;
-    second = sum;
-  }
-}
-fib(5);
-
-//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-function printmultiple(n) {
-  for (let i = 1; i <= 10; i++) {
-    console.log(`${n} x ${i} = ${n * i}`);
-  }
-}
-printmultiple(5);
-
-//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-function calcprime(n) {
-  let prime = true;
-  for (let i = 2; i < n; i++) {
-    if (n % i == 0) {
-      prime = false;
-      break;
-    }
-  }
-  prime == true
-    ? console.log(`${n}:is prime`)
-    : console.log(`${n}:is not prime`);
-}
-calcprime(9);
-
-//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-function printfact(n) {
-  let fact1 = 1;
-  for (let i = 2; i <= n; i++) {
-    fact1 = fact1 * i;
-  }
-  return fact1;
-}
-let an = printfact(5);
-console.log(an);
-
-//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-function squared(n) {
-  let square = n * n;
-  return square;
-}
-let a = squared(6);
-console.log(a);
-
-//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-function isprime(n) {
-  let prime = true;
-  for (let i = 2; i < n; i++) {
-    if (n % i == 0) {
-      prime = false;
-      break;
-    }
-  }
-  return prime;
-}
-let n = 13;
-let result = isprime(n);
-result == true ? console.log(`${n} is prime`) : console.log(`${n} sint prime`);
-
-//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-function mystar(n) {
-  let star = "@";
-  for (let i = 1; i < 8; i++) {
-    console.log(star);
-    star = star += "@";
-  }
-  let abs = star("*");
-  console.log(abs);
-}
-
-//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-let Acircle = (r) => {
-  const area = 3.142 * r * r;
-  console.log(`Area of Circle of radius ${r} cm is ${area} sq.cm`);
-};
-Acircle(100);
-
-//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-let printfact1 = (n) => {
-  let fact = 1;
-  for (let i = 2; i <= n; i++) {
-    fact = fact * i;
-    console.log(`fact of ${n} is ${fact}`);
-  }
-};
-printfact1(5);
-
-//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-let circle = (r) => {
-  const area = 3.142 * r * r;
-  console.log(`area circl of ${r} cm is ${area}`);
-};
-circle(100);
-
-//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-let cylinder = (r, h) => {
-  const val = 3.142 * r * r * h;
-  console.log(`voloum of cyluinder of ${r} cm is ${val}`);
-};
-cylinder(88, 99);
